@@ -12,26 +12,36 @@ function [consistent] = isConsistent(A, B)
     end
 endfunction
 
-A1 = [1 2 3;3 4 4;7 10 12]; 
-B1 = [0 0 0]';
-x = isConsistent(A1, B1);
+A = [1 2 3;3 4 4;7 10 12]; 
+B = [0 0 0]';
+x = isConsistent(A, B);
 disp(x);
 
-A2 = [2 3 -4 1; 1 -1 1 2; 5 0 -1 7; 7 8 -11 5]; 
-B2 = [0 0 0 0]';
-x = isConsistent(A2, B2);
+A = [2 3 -4 1; 1 -1 1 2; 5 0 -1 7; 7 8 -11 5]; 
+B = [0 0 0 0]';
+x = isConsistent(A, B);
 disp(x);
 
-A3 = [2 6 0; 6 20 -6; 0 6 -18]; 
-B3 = [-11 -3 -1]'; 
-x  = isConsistent(A3, B3);
+A = [2 6 0; 6 20 -6; 0 6 -18]; 
+B = [-11 -3 -1]'; 
+x  = isConsistent(A, B);
 disp(x);
 
-A4 = [1 2 3; 2 1 1; 1 1 1]; 
-B4 = [5 4 3]'; 
-x  = isConsistent(A4, B4);
+A = [1 2 3; 2 1 1; 1 1 1]; 
+B = [5 4 3]'; 
+x  = isConsistent(A, B);
 disp(x);
 
 
+/*
 
+  T
+
+  T
+
+  F
+
+  T
+  
+*/
 
